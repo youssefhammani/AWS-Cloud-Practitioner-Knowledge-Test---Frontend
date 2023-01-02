@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Quick Quiz - Play</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="css/game.css" />
   </head>
   <body>
+    <section>
+      <main>
     <div class="container">
       <div id="game" class="justify-center flex-column">
         <div id="hud">
           <div id="hud-item">
+                    <ul id="highScoresList"></ul>
             <p id="progressText" class="hud-prefix">
               Question
             </p>
@@ -48,6 +51,8 @@
         </div>
       </div>
     </div>
+    </main>
+    </section>
     <script src="js/game.js"></script>
   </body>
 </html>

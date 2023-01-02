@@ -1,126 +1,116 @@
-.choice-container {
-  display: flex;
-  margin-bottom: 0.5rem;
-  width: 100%;
-  font-size: 1.8rem;
-  border: 0.1rem solid rgb(86, 165, 235, 0.25);
-  background-color: white;
+$color_1: #fff;
+$color_2: white;
+$color_3: black;
+$font-family_1: 'Comfortaa', cursive;
+$background-color_1: white;
+$background-color_2: #56a5eb;
+$background-color_3: #28a745;
+$background-color_4: #dc3545;
+
+/* HUD */
+html {
+	overflow: hidden;
+	position: relative;
 }
 
-.choice-container:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
+body {
+	overflow: hidden;
+	position: relative;
+	background: #a8c0ff;
+	background: -webkit-linear-gradient(to right, #3f2b96, #a8c0ff);
+	background: linear-gradient(to right, #3f2b96, #a8c0ff);
+	font-family: $font-family_1;
+	color: $color_1;
+	user-select: none;
+	margin: 0;
+	padding: 0;
+	counter-reset: points;
+}
+
+section {
+	margin: 5%;
+	padding-top: 80px;
+}
+main {
+	background: rgba(66, 62, 81, 0.908);
+	border-radius: 10px;
+	max-width: 800px;
+	margin: 0 auto 214px;
+}
+
+#game {
+	padding: 15px;
+}
+
+#question {
+	text-align: center;
+}
+
+.choice-container {
+	display: flex;
+	margin: 2%;
+	border: 0.1rem solid rgba(86, 165, 235, 0.25);
+	border-radius: 10px;
+	background-color: $background-color_1;
+	align-items: center;
+	padding: 12px;
+	&:hover {
+		cursor: pointer;
+		box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.807);
+		transform: translateY(-0.1rem);
+		transition: transform 150ms;
+	}
 }
 
 .choice-prefix {
-  padding: 1.5rem 2.5rem;
-  background-color: #56a5eb;
-  color: white;
+	background-color: $background-color_2;
+	color: $color_2;
+	padding: 0;
+	margin: 0;
+	padding: 12px;
+	border-radius: 50%;
 }
 
 .choice-text {
-  padding: 1.5rem;
-  width: 100%;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-left: 25px;
+	color: $color_3;
 }
 
 .correct {
-  background-color: #28a745;
+	background-color: $background-color_3;
 }
 
 .incorrect {
-  background-color: #dc3545;
+	background-color: $background-color_4;
 }
 
-/* HUD */
-
 #hud {
-  display: flex;
-  justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 .hud-prefix {
-  text-align: center;
-  font-size: 2rem;
+	text-align: center;
+	font-size: 2rem;
 }
 
 .hud-main-text {
-  text-align: center;
+	text-align: center;
 }
 
 #progressBar {
-  width: 20rem;
-  height: 4rem;
-  border: 0.3rem solid #56a5eb;
-  margin-top: 1.5rem;
+	width: 20rem;
+	height: 2rem;
+	border-radius: 10px;
+	border: 0.3rem solid #56a5eb;
+	margin: 8%;
 }
 
 #progressBarFull {
-  height: 3.4rem;
-  background-color: #56a5eb;
-  width: 0%;
-}
-.choice-container {
-  display: flex;
-  margin-bottom: 0.5rem;
-  width: 100%;
-  font-size: 1.8rem;
-  border: 0.1rem solid rgb(86, 165, 235, 0.25);
-  background-color: white;
-}
-
-.choice-container:hover {
-  cursor: pointer;
-  box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
-  transform: translateY(-0.1rem);
-  transition: transform 150ms;
-}
-
-.choice-prefix {
-  padding: 1.5rem 2.5rem;
-  background-color: #56a5eb;
-  color: white;
-}
-
-.choice-text {
-  padding: 1.5rem;
-  width: 100%;
-}
-
-.correct {
-  background-color: #28a745;
-}
-
-.incorrect {
-  background-color: #dc3545;
-}
-
-/* HUD */
-
-#hud {
-  display: flex;
-  justify-content: space-between;
-}
-
-.hud-prefix {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.hud-main-text {
-  text-align: center;
-}
-
-#progressBar {
-  width: 20rem;
-  height: 4rem;
-  border: 0.3rem solid #56a5eb;
-  margin-top: 1.5rem;
-}
-
-#progressBarFull {
-  height: 3.4rem;
-  background-color: #56a5eb;
-  width: 0%;
+	height: 2rem;
+	background-color: $background-color_2;
+	width: 0%;
 }

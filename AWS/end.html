@@ -4,13 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Congrats!</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <title>High Scores</title>
+    <link rel="stylesheet" href="css/.css" />
+    <link rel="stylesheet" href="css/result.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="end" class="flex-center flex-column">
-        <h1 id="finalScore"></h1>
+    <div class="container_1">
+      <div id="end" class="utils">
+        <h1 id="finalResult">Result Quiz</h1>
+        
+         <!-- <div class="score-counter"> -->
+          <p class="score-text" id="score">Total Score :<h1 id="finalScore"></h1></p>
+        <!-- </div> -->
         <form>
           <input
             type="text"
@@ -28,10 +33,19 @@
             Save
           </button>
         </form>
-        <a class="btn" href="/game.html">Play Again</a>
-        <a class="btn" href="/">Go Home</a>
+        <a class="btn" href="game.html">Play Again</a>
+        <a class="btn" href="index.html">Go Home</a>
       </div>
     </div>
+    <div class="container">
+        <div id="result" class="flex-center flex-column">
+        <ul id="resultList"></ul>
+        <!-- <a class="btn" href="index.html">Go Home</a> -->
+      </div>
+    </div>
+    <script src="js/result.js"></script>
+    <script src="js/game.js"></script>
     <script src="js/end.js"></script>
   </body>
 </html>
+
